@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1 class="heading">Product Details</h1>
+
+        <div class="custom-select">
+        <label for="Product">Product Name
+        <select id="ddl_name" name="name" onchange="productFilter(this);">
+          <option value="0" >All</option>
+          <option  value="Product 1">Product 1</option>
+          <option  value="Product 2">Product 2</option>
+          <option  value="Product 3">Product 3</option>
+          <option  value="Product 4">Product 4</option>
+          <option  value="Product 5">Product 5</option>
+          <option  value="Product 6">Product 6</option>
+        </select>
+    </label>
+
+        <label for="Product">Category
+        <select id="ddl_category" name="category" onchange="productFilter(this);">
+          <option value="0">All</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Books">Books</option>
+          <option value="Home & Kitchen">Home & Kitchen</option>
+          <option value="Toys & Games">Toys & Games</option>
+        </select>
+    </label>
+
+        <label for="Product">Price
+        <select id="ddl_price" name="price" onchange="productFilter(this);">
+          <option value="0">All</option>
+          <option value="799.99">799.99</option>
+          <option value="19.99">19.99</option>
+          <option value="49.99">49.99</option>
+          <option value="29.99">29.99</option>
+          <option value="599.99">599.99</option>
+          <option value="9.99">9.99</option>
+        </select>
+    </label>
+
+        <label for="Product">Available
+        <select id="ddl_available" name="available" onchange="productFilter(this);">
+          <option value="0">All</option>
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+    </label>
+      </div>
+    </div>
+      <div class="row">
+        <div style="overflow-x: auto">
+          <div class="col-lg-12 col-xlg-12 col-md-12">
+            <div id="detail" class="display" style="width: 100%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
